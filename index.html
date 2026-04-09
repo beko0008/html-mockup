@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Star Media</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- PAGE HEADER role="banner" marks this as the site-wide header-->
+    <header role="banner" class="page-band">
+      <div class="band-inner">
+        <!-- Company logo -->
+        <div class="mark">
+          <img src="assets/images/logo.png" alt="Three Star Media logo" />
+        </div>
+
+        <!-- data-nav attribute helps identify this nav block -->
+        <nav data-nav="primary" aria-label="Main navigation">
+          <ul class="link-row">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- role="search" directly on the form -->
+        <form role="search" class="look-up" action="#" method="get">
+          <input
+            type="search"
+            name="q"
+            placeholder="Search..."
+            aria-label="Search this site"
+          />
+          <button type="submit">&#128269;</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <!--   HERO
+           section contains a header tag instead of a div -->
+      <section id="top" class="splash">
+        <!-- header inside section groups the hero text content -->
+        <header class="splash-content">
+          <h1>Welcome to Three Star Media</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rerum voluptas nesciunt quam nostrum similique nihil laboriosam
+            provident neque.
+          </p>
+          <a href="#contact" class="go-btn">Connect with us &#9658;</a>
+        </header>
+
+        <!-- overlay div sits behind the content via CSS absolute positioning -->
+        <div class="splash-overlay" aria-hidden="true"></div>
+      </section>
+
+      <!--   ABOUT US blockquote wraps the company description text -->
+      <section id="about" class="about-band">
+        <div class="about-inner">
+          <!-- Left: office image -->
+          <div class="about-img">
+            <img
+              src="assets/images/about-us.jpg"
+              alt="Modern office with a ping pong table"
+            />
+          </div>
+
+          <!-- Right: blockquote used for company statement text -->
+          <blockquote class="about-quote">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              unde repellendus exercitationem asperiores consequatur recusandae.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              velit ipsam atque accusamus nihil laudantium sapiente blanditiis.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!--   SERVICES -->
+      <section id="services" class="services-band">
+        <h2>Our Services</h2>
+
+        <ol class="services-ol">
+          <!-- Each li wraps a figure for image + caption -->
+          <li class="svc-entry svc-entry--major">
+            <figure class="svc-figure">
+              <img
+                src="assets/images/digital.jpg"
+                alt="Analytics on a laptop screen"
+              />
+              <figcaption class="svc-caption">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="plain-btn">Digital Plans &#9658;</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="svc-entry svc-entry--major">
+            <figure class="svc-figure">
+              <img
+                src="assets/images/marketing.jpg"
+                alt="Phone showing YouTube logo"
+              />
+              <figcaption class="svc-caption">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="plain-btn">Marketing Plans &#9658;</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="svc-entry svc-entry--minor">
+            <figure class="svc-figure">
+              <img
+                src="assets/images/video.jpg"
+                alt="Smartphone beside an open notebook"
+              />
+              <figcaption class="svc-caption">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="plain-btn">Video Plans &#9658;</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="svc-entry svc-entry--minor">
+            <figure class="svc-figure">
+              <img
+                src="assets/images/web.jpg"
+                alt="Newspaper boxes on a city sidewalk"
+              />
+              <figcaption class="svc-caption">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="plain-btn">Web Plans &#9658;</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="svc-entry svc-entry--minor">
+            <figure class="svc-figure">
+              <img
+                src="assets/images/print.jpg"
+                alt="Stacked printed documents"
+              />
+              <figcaption class="svc-caption">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="plain-btn">Print Plans &#9658;</a>
+              </figcaption>
+            </figure>
+          </li>
+        </ol>
+      </section>
+
+      <!--   VISION -->
+      <aside class="vision-aside">
+        <div class="vision-inner">
+          <h2>Our Vision</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="go-btn">Learn More &#9658;</a>
+        </div>
+      </aside>
+
+      <!--   TEAM -->
+      <section id="team" class="team-band">
+        <h2>Our Team</h2>
+
+        <div class="team-wrap">
+          <!-- address is semantically used for contact/person info -->
+          <div class="member-row">
+            <img src="assets/images/john.jpg" alt="Portrait of John Doe" />
+            <address class="member-detail">
+              <h3>John Doe</h3>
+              <h4>CEO &amp; Co-owner</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </address>
+          </div>
+
+          <!-- member-row--flip moves image to right side -->
+          <div class="member-row member-row--flip">
+            <img src="assets/images/bob.jpg" alt="Portrait of Bob Rite" />
+            <address class="member-detail">
+              <h3>Bob Rite</h3>
+              <h4>CFO &amp; Co-owner</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </address>
+          </div>
+        </div>
+      </section>
+
+      <!--   CONTACT output element as confirmation placeholder Hours in details/summary - expandable Map in div with data-location attribute -->
+      <section id="contact" class="contact-band">
+        <h2>Contact Us</h2>
+
+        <div class="contact-body">
+          <!-- Contact form with output for confirmation message -->
+          <div class="form-col">
+            <h3>Send us a message</h3>
+
+            <form action="#" method="post" class="msg-form">
+              <div class="row-field">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required />
+              </div>
+
+              <div class="row-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="row-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="go-btn">Send &#9658;</button>
+
+              <!-- output shows confirmation after form submit -->
+              <output
+                class="form-confirm"
+                for="fullname email message"
+              ></output>
+            </form>
+          </div>
+
+          <!-- Map wrapped in div with data-location for semantic context -->
+          <div class="map-col" data-location="Algonquin College">
+            <h3>Our Location</h3>
+            <!-- satellite view t=k, zoom z=13 -->
+            <iframe
+              src="https://maps.google.com/maps?q=Algonquin%20College&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+              title="Satellite map of Algonquin College Ottawa"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Hours inside details - expandable/collapsible -->
+          <div class="hours-col">
+            <details class="hours-panel" open>
+              <summary class="hours-title">Hours of Operation</summary>
+              <table class="hours-tbl">
+                <thead>
+                  <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Monday &ndash; Friday</td>
+                    <td>9 AM &ndash; 6 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday &ndash; Sunday</td>
+                    <td>Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER dl used for credits and attribution-->
+    <footer class="page-foot">
+      <dl class="foot-credits">
+        <dt>Copyright</dt>
+        <dd>&copy; Three Star Media, 2020. All rights reserved.</dd>
+
+        <dt>Photography</dt>
+        <dd>
+          Images courtesy of
+          <a
+            href="https://unsplash.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Unsplash</a
+          >
+        </dd>
+      </dl>
+    </footer>
+  </body>
+</html>
