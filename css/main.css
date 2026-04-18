@@ -30,8 +30,9 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 a {
@@ -303,34 +304,46 @@ p {
     justify-content: space-between;
     max-width: var(--container-width);
     margin: 0 auto;
+    gap: 20px;
   }
 
   .mark {
     width: auto;
-    padding: 10px 20px;
+    padding: 8px 16px;
   }
 
   .mark img {
-    height: 50px;
+    height: 46px;
   }
 
   .link-row {
     flex-direction: row;
-    gap: 20px;
+    gap: 28px;
   }
 
   .look-up {
     width: auto;
+    gap: 6px;
+  }
+
+  .look-up input {
+    width: 175px;
+    flex: none;
   }
 
   .about-inner {
     flex-direction: row;
+    align-items: stretch;
     max-width: var(--container-width);
     margin: 0 auto;
   }
 
   .about-img, .about-quote {
     flex: 1;
+  }
+
+  .about-img img {
+    height: 100%;
   }
 
   .services-band, .team-band, .contact-band {
@@ -340,6 +353,7 @@ p {
 
   .services-ol {
     grid-template-columns: repeat(6, 1fr);
+    gap: 26px;
   }
 
   .svc-entry--major {
@@ -352,6 +366,8 @@ p {
 
   .member-row {
     display: flex;
+    align-items: stretch;
+    min-height: 350px;
   }
 
   .member-row--flip {
@@ -359,19 +375,34 @@ p {
   }
 
   .member-row img {
-    width: 50%;
+    width: 48%;
+    object-fit: cover;
+  }
+
+  .member-detail {
+    flex: 1;
+    padding: 50px 44px;
   }
 
   .contact-body {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 48px;
   }
 
   .form-col, .map-col, .hours-col {
     order: 0;
   }
 
+  .form-col {
+    grid-column: 1;
+  }
+
+  .map-col {
+    grid-column: 2;
+  }
+
   .hours-col {
-    grid-column: span 2;
+    grid-column: 1 / -1;
   }
 }
-
